@@ -99,7 +99,7 @@ How to start the counter:
 * NumpadDiv (/) - Reset Timer
 * NumpadMult (*) - Close Timer
 
-**Transslot on `:**
+**Transslot on RCtrl:**
 * RCtrl - Start
 * NumpadEnter - Reset Timer
 * NumpadSub (-) - Close Timer
