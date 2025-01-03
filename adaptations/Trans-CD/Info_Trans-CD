@@ -1,0 +1,21 @@
+Start on `:
+Transslot Cooldown.ahk Sourcefile
+Transslot Cooldown.exe Application
+Reset timer (chill on 0): Numpad0
+Close app: RCtrl
+
+-----------------------
+
+Start on RCtl:
+Transslot Cooldown_RCtrl.ahk Sourcefile
+Transslot Cooldown_RCtl.exe Application
+Reset timer: NumpadEnter
+Close app: NumpadSub (-)
+
+-----------------------
+
+Start on Numpad5:
+Transslot Cooldown_Num5.ahk Sourcefile
+Transslot Cooldown_Num5.exe Application
+Reset timer: NumpadDiv (/)
+Close app: NumpadMult (*)

@@ -9,8 +9,8 @@ These include:
 - 15-6 p1 (made by yixiwinston)
 - 15-6 p3 (made by yixiwinston)
 - Freeze timer
-- Immortal passive timer (ToDo)
-- Avarice passive timer for Raid (ToDo)
+- Title Cooldown (17-5, 15-6, TSS)
+- Transslot Reset Counter
 
 ## Setup
 
@@ -86,6 +86,24 @@ How to start the counter:
 * F8 - 13-5
 * F10 - Reset Timer
 * F11 - Close Timer
+
+---------------------------
+
+**Transslot on `:**
+* ` - Start
+* Numpad0 - Reset Timer
+* RCtrl - Close Timer
+
+**Transslot on Num5:**
+* Numpad5 - Start
+* NumpadDiv (/) - Reset Timer
+* NumpadMult (*) - Close Timer
+
+**Transslot on `:**
+* RCtrl - Start
+* NumpadEnter - Reset Timer
+* NumpadSub (-) - Close Timer
+
 
 ## Original Author
 
