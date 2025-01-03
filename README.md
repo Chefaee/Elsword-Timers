@@ -1,7 +1,7 @@
 # Various Timers for Elsword
 ## Inclusions
 
-This repo contains different timers for the game Elsword.
+This repo contains various timers for the game Elsword.
 
 These include:
 
