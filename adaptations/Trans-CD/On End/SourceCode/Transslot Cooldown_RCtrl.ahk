@@ -1,7 +1,7 @@
 ﻿/*
-Num5 - Transslot CD Start
-NumpadDiv (/) - Reset Timer to 0
-NumpadMult (*) - Close Timer
+End - Transslot CD Start, yes it's this
+PageDown - Reset Timer to 0
+PageUp - Close Timer
 */
 
 #SingleInstance Force
@@ -38,11 +38,11 @@ WM_LBUTTONDOWN() {
 flag = 0
 return
 
-NumpadMult::
+PgUp::
     ExitApp
 return
 
-$Numpad5::
+$End::
    GuiControl, +cF4BD3E, Topic1
    GuiControl, +cFFFFFF, TransCD
    cnt1 := 19
@@ -50,7 +50,7 @@ $Numpad5::
 Return
 
 
-$NumpadDiv::
+$PgDn::
    GuiControl, +cFFFFFF, TransCD
    
    flag = 0

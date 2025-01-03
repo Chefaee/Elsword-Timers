@@ -1,5 +1,5 @@
 ﻿/*
-` - Transslot CD Start, yes it's this -> ````````
+RCtrl - Transslot CD Start
 NumpadEnter - Reset Timer to 0
 NumpadSub - Close Timer
 */

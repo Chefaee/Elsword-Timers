@@ -104,6 +104,11 @@ How to start the counter:
 * NumpadEnter - Reset Timer
 * NumpadSub (-) - Close Timer
 
+**Transslot on End:**
+* End - Start
+* PageDown - Reset Timer
+* PageUp - Close Timer
+
 
 ## Original Author
 
