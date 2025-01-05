@@ -27,3 +27,11 @@ Transslot Cooldown_End.ahk Sourcefile
 Transslot Cooldown_End.exe Application
 Reset timer: PageDown
 Close app: PageUp
+
+-----------------------
+
+Start on <:
+Transslot Cooldown_Arrow.ahk Sourcefile
+Transslot Cooldown_Arrow.exe Application
+Reset timer: RCtrl
+Close app: ´ as in ´´´

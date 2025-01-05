@@ -109,6 +109,11 @@ How to start the counter:
 * PageDown - Reset Timer
 * PageUp - Close Timer
 
+**Transslot on <:**
+* < - Start
+* RCtrl - Reset Timer
+* ´ - Close Timer
+
 
 ## Original Author
 
