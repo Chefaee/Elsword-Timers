@@ -6,6 +6,14 @@ Close app: RCtrl
 
 -----------------------
 
+Start on ` (2):
+Transslot Cooldown.ahk Sourcefile
+Transslot Cooldown.exe Application
+Reset timer (chill on 0): Numpad0
+Close app: Numpad7
+
+-----------------------
+
 Start on Numpad5:
 Transslot Cooldown_Num5.ahk Sourcefile
 Transslot Cooldown_Num5.exe Application
