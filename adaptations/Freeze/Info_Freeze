@@ -15,3 +15,10 @@ Freeze_Num4.ahk Sourcefile
 Freeze_Num4.exe Application
 Reset timer: NumEnter
 Close app: NumSub (Minus, -)
+
+Rosso-Spike + Freeze
+Numpad5 - Thorns
+Numpad8 - Overtime
+Numpad4 - Freeze
+NumpadEnter - Reset Timer
+NumpadSub - Close Timer
