@@ -24,10 +24,10 @@ Gui, Add, Text,vTopic4 x5 y75 w50 center, Freeze
 Gui, Margin ,, 5,5
 Gui, Font, s14 cBlack, MS Sans Serif
 Gui, Add, Text, vCountdown1 x85 y5 w100 cFFFFFF ,0
-Gui, Add, Text, vCountdown3 x85 y75 w100 cFFFFFF ,0
-Gui, Add, Text, vCountdown4 x85 y110 w100 c21e4ff ,0
+Gui, Add, Text, vCountdown3 x85 y40 w100 cFFFFFF ,0
+Gui, Add, Text, vCountdown4 x85 y75 w100 c21e4ff ,0
 
-Gui, Show, h120 w120 
+Gui, Show, h75 w120
 Gui, +AlwaysOnTop -Caption -Border
 
 Gui, +LastFound
