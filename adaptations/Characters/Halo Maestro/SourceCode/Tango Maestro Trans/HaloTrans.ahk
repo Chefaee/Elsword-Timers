@@ -1,17 +1,17 @@
 ﻿/*
 Halo:
-Home (Pos1) - Combo Done/Undo
-Pause (Pause unterbr) - Awakening Done/Undo
-F2 - Starting Halo manually
-F4 - Reset Timer
-F9 - Close Timer
+F13 - Combo Done/Undo
+F14 - Awakening Done/Undo
+F15 - Starting Halo manually
+F16 - Reset Timer
+F17 - Close Timer
 
 Trans:
-RCtrl - Transslot CD Start
-< (NOT ARROW KEY, Arrow as in 6<9==true) - Reset Timer to 0
+F18 - Transslot CD Start
+F19 - Reset Timer to 0
 
 Transslot has reset prevention.
-Reclicking RCtrl wont restart the Transslot-Timer ~
+Reclicking F18 wont restart the Transslot-Timer ~
 */
 
 #SingleInstance Force
@@ -59,12 +59,12 @@ WM_LBUTTONDOWN() {
 flag = 0
 return
 
-F9::
+F17::
     ExitApp
 return
 
 
-$F2::
+$F15::
    GuiControl, +cF4BD3E, Topic3
    GuiControl, +cFFFFFF, Countdown1
    cnt3 := 119
@@ -72,7 +72,7 @@ $F2::
 Return
 
 
-$F4::
+$F16::
    GuiControl, +cFFFFFF, Function1
    GuiControl, +cFFFFFF, Function2
    GuiControl, +cFFFFFF, Countdown1
@@ -88,7 +88,7 @@ $F4::
    flag = 0
 Return
 
-$Home::
+$F13::
    check1 := !check1
    if (check1) {
       GuiControl, +cF4BD3E, Topic1
@@ -107,7 +107,7 @@ $Home::
    }
 Return
 
-$Pause::
+$F14::
    check2 := !check2
    if (check2) {
       GuiControl, +cF4BD3E, Topic2
@@ -123,7 +123,7 @@ $Pause::
       GoSub, Go4
 Return
 
-$RCtrl::
+$F18::
    if (transRunning == 0) {
        transRunning := 1
        GuiControl, +cF4BD3E, Topic4
@@ -133,7 +133,7 @@ $RCtrl::
    }
 Return
 
-$<::
+$F19::
    GuiControl, +cFFFFFF, Countdown2
 
    flag = 0

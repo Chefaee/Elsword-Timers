@@ -145,13 +145,11 @@ Go4:
    if (cnt4 == 0) {
        GuiControl, +cF4BD3E, Topic4
        GuiControl, +cFFFFFF, TransCD
-       cnt1 := 20
+       cnt4 := 20
        SetTimer, Go4, 1000
    }
 
-   if (--cnt4 < 0)
-      SetTimer, Go4, off
-   else if (cnt4 < 5)
+   if (--cnt4 < 5)
       GuiControl, +cRed, TransCD
    else if (cnt4 < 11)
       GuiControl, +cF4BD3E, TransCD
