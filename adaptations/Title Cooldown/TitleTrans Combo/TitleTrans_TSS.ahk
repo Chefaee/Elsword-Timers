@@ -18,17 +18,17 @@ if not A_IsAdmin
 Gui, Show, x1550 y700
 Gui, Color, c404040
 Gui, Font, s14 cF4BD3E, MS Sans Serif
-Gui, Add, Text,vTopic1 x5 y5 w50 center, 17-5
-Gui, Add, Text,vTopic2 x5 y40 w50 center , 15-6
-Gui, Add, Text,vTopic3 x5 y75 w50 center , 13-5
-Gui, Add, Text,vTopic4 x5 y110 w50 center, Trans
+Gui, Add, Text,vTopic175 x5 y5 w50 center, 17-5
+Gui, Add, Text,vTopic156 x5 y40 w50 center , 15-6
+Gui, Add, Text,vTopic135 x5 y75 w50 center , 13-5
+Gui, Add, Text,vTopicTrans x5 y110 w50 center, Trans
 
 
 Gui, Margin ,, 5,5
 Gui, Font, s14 cBlack, MS Sans Serif
-Gui, Add, Text, vCountdown1 x85 y5 w100 cFFFFFF ,0
-Gui, Add, Text, vCountdown2 x85 y40 w100 cFFFFFF ,0
-Gui, Add, Text, vCountdown3 x85 y75 w100 cFFFFFF ,0
+Gui, Add, Text, vCountdown175 x85 y5 w100 cFFFFFF ,0
+Gui, Add, Text, vCountdown156 x85 y40 w100 cFFFFFF ,0
+Gui, Add, Text, vCountdown135 x85 y75 w100 cFFFFFF ,0
 Gui, Add, Text, vTransCD x85 y110 w100 cFFFFFF ,0
 
 Gui, Show, h120 w120
@@ -53,51 +53,51 @@ NumpadSub::
 return
 
 $Numpad1::
-   GuiControl, +cF4BD3E, Topic1
-   GuiControl, +cFFFFFF, Countdown1
-   cnt1 := 59
-   SetTimer, Go1, 1000
+   GuiControl, +cF4BD3E, Topic175
+   GuiControl, +cFFFFFF, Countdown175
+   cnt175 := 59
+   SetTimer, Go175, 1000
 Return
 
 $Numpad2::
-   GuiControl, +cF4BD3E, Topic2
-   GuiControl, +cFFFFFF, Countdown2
-   cnt2 := 29
-   SetTimer, Go2, 1000
+   GuiControl, +cF4BD3E, Topic156
+   GuiControl, +cFFFFFF, Countdown156
+   cnt156 := 29
+   SetTimer, Go156, 1000
 Return
 
 $Numpad3::
-   GuiControl, +cF4BD3E, Topic3
-   GuiControl, +cFFFFFF, Countdown3
-   cnt3 := 29
-   SetTimer, Go3, 1000
+   GuiControl, +cF4BD3E, Topic135
+   GuiControl, +cFFFFFF, Countdown135
+   cnt135 := 29
+   SetTimer, Go135, 1000
 Return
 
 $Numpad5::
-   GuiControl, +cF4BD3E, Topic4
+   GuiControl, +cF4BD3E, TopicTrans
    GuiControl, +cFFFFFF, TransCD
-   cnt4 := 19
-   SetTimer, Go4, 1000
+   cntTrans := 19
+   SetTimer, GoTrans, 1000
 Return
 
 
 $NumpadEnter::
-   GuiControl, +cFFFFFF, Countdown1
-   GuiControl, +cFFFFFF, Countdown2
-   GuiControl, +cFFFFFF, Countdown3
-   GuiControl, +cFFFFFF, Countdown4
+   GuiControl, +cFFFFFF, Countdown175
+   GuiControl, +cFFFFFF, Countdown156
+   GuiControl, +cFFFFFF, Countdown135
+   GuiControl, +cFFFFFF, TransCD
    
    flag = 0
 
-   GuiControl,, Countdown1, 0
-   GuiControl,, Countdown2, 0
-   GuiControl,, Countdown3, 0
-   GuiControl,, Countdown4, 0
+   GuiControl,, Countdown175, 0
+   GuiControl,, Countdown156, 0
+   GuiControl,, Countdown135, 0
+   GuiControl,, TransCD, 0
 
-   SetTimer, Go1, off
-   SetTimer, Go2, off
-   SetTimer, Go3, off
-   SetTimer, Go4, off
+   SetTimer, Go175, off
+   SetTimer, Go156, off
+   SetTimer, Go135, off
+   SetTimer, GoTrans, off
 Return
 
 $NumpadMult::
@@ -107,50 +107,50 @@ $NumpadMult::
 
    GuiControl,, TransCD, 0
 
-   SetTimer, Go4, off
+   SetTimer, GoTrans, off
 Return
 
-Go1:   
-   GuiControl,, Countdown1, % cnt1
-   if (--cnt1 < 0)
-      SetTimer, Go1, off
-   else if (cnt1 < 11)
-      GuiControl, +cRed, Countdown1
-   else if (cnt1 < 31)
-      GuiControl, +cF4BD3E, Countdown1
+Go175:
+   GuiControl,, Countdown175, % cnt175
+   if (--cnt175 < 0)
+      SetTimer, Go175, off
+   else if (cnt175 < 11)
+      GuiControl, +cRed, Countdown175
+   else if (cnt175 < 31)
+      GuiControl, +cF4BD3E, Countdown175
 Return
 
-Go2:   
-   GuiControl,, Countdown2, % cnt2
-   if (--cnt2 < 0)
-      SetTimer, Go2, off
-   else if (cnt2 < 11)
-      GuiControl, +cRed, Countdown2
-   else if (cnt2 < 21)
-      GuiControl, +cF4BD3E, Countdown2
+Go156:
+   GuiControl,, Countdown156, % cnt156
+   if (--cnt156 < 0)
+      SetTimer, Go156, off
+   else if (cnt156 < 11)
+      GuiControl, +cRed, Countdown156
+   else if (cnt156 < 21)
+      GuiControl, +cF4BD3E, Countdown156
 Return
 
-Go3:   
-   GuiControl,, Countdown3, % cnt3
-   if (--cnt3 < 0)
-      SetTimer, Go3, off
-   else if (cnt3 < 16)
-      GuiControl, +cRed, Countdown3
-   else if (cnt3 < 26)
-      GuiControl, +cF4BD3E, Countdown3
+Go135:
+   GuiControl,, Countdown135, % cnt135
+   if (--cnt135 < 0)
+      SetTimer, Go135, off
+   else if (cnt135 < 16)
+      GuiControl, +cRed, Countdown135
+   else if (cnt135 < 26)
+      GuiControl, +cF4BD3E, Countdown135
 Return
 
-Go4:
-   GuiControl,, TransCD, % cnt4
-   if (cnt4 == 0) {
-       GuiControl, +cF4BD3E, Topic4
+GoTrans:
+   GuiControl,, TransCD, % cntTrans
+   if (cntTrans == 0) {
+       GuiControl, +cF4BD3E, TopicTrans
        GuiControl, +cFFFFFF, TransCD
-       cnt4 := 20
-       SetTimer, Go4, 1000
+       cntTrans := 20
+       SetTimer, GoTrans, 1000
    }
 
-   if (--cnt4 < 5)
+   if (--cntTrans < 5)
       GuiControl, +cRed, TransCD
-   else if (cnt4 < 11)
+   else if (cntTrans < 11)
       GuiControl, +cF4BD3E, TransCD
 Return
